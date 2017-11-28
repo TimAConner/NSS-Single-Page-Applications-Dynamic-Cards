@@ -23,6 +23,11 @@ function createCard(){
         deleteButton.setAttribute("id", `deleteButton${buttonCount}`)
         deleteButton.textContent = "Delete";
 
+        //Add delete functionality
+        deleteButton.addEventListener("click", function(){
+            card.parentNode.removeChild(card);
+        });
+
         //Add pagraph, button, and card to DOM
         card.appendChild(paragraph);
         card.appendChild(deleteButton);
