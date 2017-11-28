@@ -35,6 +35,4 @@ function createCard(){
     }    
 }
 
-document.getElementById("btn-create").addEventListener('click', function(){
-    createCard();
-});
+document.getElementById("btn-create").addEventListener('click', createCard());
